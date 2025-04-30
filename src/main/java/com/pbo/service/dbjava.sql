@@ -30,7 +30,7 @@ SET time_zone = "+00:00";
 CREATE TABLE `akun` (
   `id` int(5) NOT NULL,
   `email` varchar(50) NOT NULL,
-  `pwd` varchar(32) NOT NULL,
+  `pwd` varchar(128) NOT NULL,
   `nama` varchar(50) NOT NULL,
   `foto` varchar(260) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;

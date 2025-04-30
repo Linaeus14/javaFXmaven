@@ -23,7 +23,9 @@ public class mainController extends dataControl {
 
     @FXML
     public void initialize() {
-        imageClip.mask(App.akun.getFoto(), profileImage);
+        if (App.akun.getFoto() != null && !App.akun.getFoto().isEmpty()) {
+            imageClip.mask(App.akun.getFoto(), profileImage);
+        }
         tName.setText(App.akun.getNama());
         tMail.setText(App.akun.getEmail());
     }
